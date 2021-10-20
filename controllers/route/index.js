@@ -18,42 +18,39 @@ route.get('/login', (req,res) => {
     res.render('page/login');
 });
 
-route.get('/login2', (req,res) => {
-    res.render('page/login2');
-});
-
 route.get('/register', (req,res) => {
     res.render('page/register');
 });
 
-
-route.get('/bahan', (req,res) => {
-    res.render('page/bahan');
+route.get('/profile', (req,res) => {
+    res.render('page/profile');
 });
 
-route.get('/kategoribhn', (req,res) => {
-    res.render('page/kategoribhn');
+route.get('/detailproduk', (req,res) => {
+    res.render('page/detailproduk');
 });
 
-route.get('/produk', (req,res) => {
-    res.render('page/produk');
+route.get('/createproduk', (req,res) => {
+    res.render('page/createproduk');
 });
 
-route.get('/kategoripdk', (req,res) => {
-    res.render('page/kategoripdk');
+route.get('/step', (req,res) => {
+    res.render('page/step');
 });
 
-route.get('/laporanuser', (req,res) => {
-    res.render('page/laporanuser');
+route.get('/home', (req,res) => {
+    res.render('page/home');
 });
 
-route.get('/laporanadmin', (req,res) => {
-    res.render('page/laporanadmin');
+route.get('/pagejasa', (req,res) => {
+    res.render('page/pagejasa');
 });
 
-route.get('/pengguna', (req,res) => {
-    res.render('page/pengguna');
+route.get('/pageiklan', (req,res) => {
+    res.render('page/pageiklan');
 });
+
+// 404
 
 route.use('/', (req,res) => {
     res.render('page/404');
