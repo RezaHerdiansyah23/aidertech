@@ -50,6 +50,27 @@ route.get('/pageiklan', (req,res) => {
     res.render('page/pageiklan');
 });
 
+route.get('/editprofile', (req,res) => {
+    res.render('page/editprofile');
+});
+
+route.get('/about', (req,res) => {
+    res.render('page/about');
+});
+
+
+route.get('/produksaya', (req,res) => {
+    res.render('page/produksaya');
+});
+
+route.get('/editproduk', (req,res) => {
+    res.render('page/editproduk');
+});
+
+route.get('/formeditproduk', (req,res) => {
+    res.render('page/formeditproduk');
+});
+
 // 404
 
 route.use('/', (req,res) => {

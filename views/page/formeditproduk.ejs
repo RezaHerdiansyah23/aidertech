@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="INSPIRO" />
+    <meta name="description" content="Themeforest Template Polo, html template">
+    <link rel="icon" type="image/png" href="images/favicon.png">   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Document title -->
+    <title>POLO | The Multi-Purpose HTML5 Template</title>
+    <!-- Stylesheets & Fonts -->
+    <link href="css/plugins.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Body Inner -->
+    <div class="body-inner">
+        <!-- Header -->
+        <!-- end: Header -->
+        <!-- Page title -->
+        
+        <!-- end: Page title -->
+        <!-- Page Content -->
+        <section id="page-content">
+            <div class="container">
+                <div class="row">
+                    <!-- content -->
+                        <!--end: File upload 1-->
+                            <div class="card-body">
+                                <!--Wizard 7-->
+                                <form class="needs-validation" novalidate>
+                                    <h3>Edit produk</h3>
+                                    <div class="h5 mb-4">Isi dengan benar</div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="name">Nama produk</label>
+                                            <input type="text" class="form-control" name="name" placeholder="Enter your Name">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="surname">Harga</label>
+                                            <input type="text" class="form-control" name="surname" placeholder="Enter your Surname">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="gender">Kategori produk</label>
+                                            <select class="form-control" name="gender">
+                                                <option>Kuliner</option>
+                                                <option>Barang</option>
+                                                <option>Agri bisnis</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="gender">Masukan variasi</label>
+                                            <input class="form-control" type="date" name="dateofbirth">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <!--File upload 3-->
+                                        <div class="form-group">
+                                            <label for="telephone">Tambahkan Foto</label>
+                                            <a class="dropzone-attach-files btn btn-sm mb-0">Tambahkan</a>
+                                            <div class="d-none" id="fileUpload3" action="/file-upload" class="dropzone">
+                                                <div class="fallback">
+                                                    <input name="file" type="file" multiple />
+                                                </div>
+                                            </div>
+                                            <!-- Preview -->
+                                            <div class="mt-3" id="formFiles3"></div>
+                                            <!-- File preview template -->
+                                            <div class="d-none" id="formTemplate3">
+                                                <div class="card mb-3">
+                                                    <div class="p-2">
+                                                        <div class="row align-items-start">
+                                                            <div class="col-auto">
+                                                                <img data-dz-thumbnail src="#" class="avatar border rounded">
+                                                            </div>
+                                                            <div class="col pl-0">
+                                                                <a href="#" class="text-muted font-weight-bold" data-dz-name></a>
+                                                                <p class="mb-0"><small data-dz-size></small> <small class="d-block text-danger" data-dz-errormessage></small></p>
+                                                            </div>
+                                                            <div class="col-auto pt-2">
+                                                                <a class="btn-lg text-danger" href="#" data-dz-remove><i class="icon-trash-2"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end: File preview template -->
+                                            <small id="dropzoneHelp" class="form-text text-muted">Max file size is 2MB and max number of files is 5.</small>
+                                        </div>
+                                        <!--end: File upload 3-->
+                                    </div>
+                                </form>
+                                <div class="line"></div>
+                                <!--end: Wizard 7-->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end: content -->
+                    <!-- Sidebar-->
+                    <!-- end: sidebar-->
+                </div>
+            </div>
+        </section>
+        <!-- end: Page Content -->
+        <!-- Footer -->
+    
+        <!-- end: Footer -->
+    </div>
+    <!-- end: Body Inner -->
+    <!-- Scroll top -->
+    <a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
+    <!--Plugins-->
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.js"></script>
+    <!--Template functions-->
+    <script src="js/functions.js"></script>
+    <!-- Dropzone plugin files-->
+    <link href="plugins/dropzone/dropzone.css" rel="stylesheet">
+    <script src="plugins/dropzone/dropzone.js"></script>
+    <script>
+        Dropzone.autoDiscover = false;
+        //Form 1
+        var form2 = $('#fileUpload1');
+        form2.dropzone({
+            url: "http://polo/files/post",
+            addRemoveLinks: true,
+            maxFiles: 1,
+            maxFilesize: 10,
+            acceptedFiles: "image/*",
+        });
+        //Form 2
+        var form2 = $('#fileUpload2');
+        form2.dropzone({
+            url: "http://polo/files/post",
+            maxFilesize: 5,
+            acceptedFiles: "image/*",
+            previewsContainer: "#formFiles2",
+            previewTemplate: $("#formTemplate2").html(),
+        });
+        //Form 3
+        var form3 = $('#fileUpload3');
+        form3.dropzone({
+            url: "http://polo/files/post",
+            maxFilesize: 5,
+            acceptedFiles: "image/*",
+            previewsContainer: "#formFiles3",
+            previewTemplate: $("#formTemplate3").html(),
+            clickable: ".dropzone-attach-files"
+        });
+    </script>
+</body>
+
+</html>

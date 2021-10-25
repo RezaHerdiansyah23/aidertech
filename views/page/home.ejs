@@ -12,6 +12,23 @@
     <!-- Stylesheets & Fonts -->
     <link href="css/plugins.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .portfolio-image {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        img {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 300px;
+			height: 200px;
+			padding: 10px;
+			margin: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -54,18 +71,33 @@
                         <a class="lines-button x"><span class="lines"></span></a>
                     </div>
                   
-            <div id="mainMenu">
-                <div class="container">
-                    <nav>
-                        <ul>
-                            <li><a href="home" class="#">Beranda</a></li>
-                            <li><a  href="profile" >Profile</a></li>
-                            <li><a href="" class="#">Pengaturan</a></li>
-                            <li><a href="index" class="#">Keluar</a></li>
-        
-                                    </li>
-                                </div>
-                            </div>
+                    <div id="mainMenu">
+                        <div class="container">
+                            <nav>
+                                <ul>
+                                    <li><a href="home" class="#">Beranda</a></li>                            
+                                    <li class="dropdown-submenu"><a href="#">Profil</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="profile">Profil saya</a></li>
+                                            <li><a href="produksaya">Produk saya</a></li>
+                                        </ul>
+                                    <li class="dropdown-submenu"><a href="#">Pengaturan</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="editprofile">Edit Profile</a></li>
+                                            <li><a href="profile">Akun</a></li>
+                                            <li><a href="profile">Langkah</a></li>
+                                            <li><a href="editprofile">Keamanan</a></li>
+                                            <li><a href="editprofile">Notifikasi</a></li>
+                                            <li><a href="about">Tentang</a></li>
+                                        </ul>
+                                    <li><a href="index"><i class="icon-log-out"></i></a></li>
+                
+                                            </li>
+                                        </div>
+                                    </div>
+                                </header>
+                        </div>
+                    </div>
                         </header>
 
                 </div>
@@ -87,7 +119,7 @@
               <div class="row">
                 <div class="col-lg-10">
                   <h3>
-                    Kami menyediakan jasa iklan <span>Mulai Rp. 50.000</span> Ke berbagai platform media sosial.
+                    Kami menyediakan jasa iklan <span>Mulai dari Rp. 50.000,-</span> Ke berbagai platform media sosial.
                   </h3>
                   <p>
                     Ayok bangkitkan UMKM anda bersama kami.
@@ -113,6 +145,7 @@
                                 <li class="active"><a href="#" data-category="*">Tampilkan semua</a></li>
                                 <li><a href="#" data-category=".ct-branding">Kuliner</a></li>
                                 <li><a href="#" data-category=".ct-photography">Barang</a></li>
+                                <li><a href="#" data-category=".ct-media">fashion</a></li>
                                 <li><a href="#" data-category=".ct-marketing">Agri bisinis</a></li>
                             </ul>
                             <div class="grid-active-title">Show All</div>
@@ -121,27 +154,11 @@
                         <!-- Portfolio -->
                         <div id="portfolio" class="grid-layout portfolio-3-columns" data-margin="20">
                             <!-- portfolio item -->
-                            <!-- <div class="portfolio-item no-overlay ct-photography ct-branding">
-                                <div class="portfolio-item-wrap">
-                                    <div class="portfolio-slider">
-                                        <div class="carousel dots-inside dots-dark arrows-dark" data-items="1" data-loop="true" data-autoplay="true" data-animate-in="fadeIn" data-animate-out="fadeOut" data-autoplay="1500">
-                                            <a href="#"><img src="images/portfolio/64.jpg" alt=""></a>
-                                            <a href="#"><img src="images/portfolio/70.jpg" alt=""></a>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-description">
-                                        <a href="portfolio-page-grid-gallery.html">
-                                            <h3>Towel World</h3>
-                                            <span>Graphics</span>
-                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <div class="portfolio-item no-overlay img-zoom ct-photography">
+                           
+                             <!-- <div class="portfolio-item no-overlay img-zoom ct-photography">
                                 <div class="portfolio-item-wrap">
                                     <div class="portfolio-image">
-                                        <a href="profile"><img src="images/portfolio/60.jpg" alt=""></a>
+                                        <a href="profile"><img src="/images/elektronik.jpg" alt=""></a>
                                     </div>
                                     <div class="portfolio-description">
                                         <a href="profile">
@@ -151,48 +168,35 @@
                                         </a>
                                     </div>
                                 </div>
-                            </div>
+                            </div>  -->
                             <!-- end: portfolio item -->
                             <!-- portfolio item -->
                             <div class="portfolio-item no-overlay img-zoom ct-branding">
                                 <div class="portfolio-item-wrap">
                                     <div class="portfolio-image">
-                                        <a href="profile"><img src="images/portfolio/60.jpg" alt=""></a>
+                                        <a href="profile"><img src="/images/Kuliner2.jpg" alt=""></a>
                                     </div>
                                     <div class="portfolio-description">
                                         <a href="profile">
-                                            <h3>Warung nasi</h3>
+                                            <h3>ALis food</h3>
                                             <span>Babakan</span>
-                                            <p>Nasi khas sunda liwet</p>
+                                            <p>Kuliner</p>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                             <!-- end: portfolio item -->
                             <!-- portfolio item -->
-                            <!-- <div class="portfolio-item no-overlay img-zoom ct-photography ct-media ct-branding ct-Media">
-                                <div class="portfolio-item-wrap">
-                                    <div class="portfolio-image">
-                                        <a href="#"><img src="images/portfolio/61.jpg" alt=""></a>
-                                    </div>
-                                    <div class="portfolio-description">
-                                        <a href="portfolio-page-grid-gallery.html">
-                                            <h3>Let's Go Outside</h3>
-                                            <span>Illustrations / Graphics</span>
-                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div> -->
+                           
                             <div class="portfolio-item no-overlay img-zoom ct-branding">
                                 <div class="portfolio-item-wrap">
                                     <div class="portfolio-image">
-                                        <a href="profile"><img src="images/portfolio/60.jpg" alt=""></a>
+                                        <a href="profile"><img src="/images/soto.jpg" alt=""></a>
                                     </div>
                                     <div class="portfolio-description">
                                         <a href="profile">
                                             <h3>Berkah soto</h3>
-                                            <span>Majalay</span>
+                                            <span>Majalaya</span>
                                             <p>Makanan soto khas jawa</p>
                                         </a>
                                     </div>
@@ -200,54 +204,27 @@
                             </div>
                             <!-- end: portfolio item -->
                             <!-- portfolio item -->
-                            <!-- <div class="portfolio-item no-overlay img-zoom ct-photography ct-media ct-branding ct-marketing ct-webdesign">
+                            <div class="portfolio-item no-overlay img-zoom ct-photography">
                                 <div class="portfolio-item-wrap">
                                     <div class="portfolio-image">
-                                        <a href="#"><img src="images/portfolio/65.jpg" alt=""></a>
-                                    </div>
-                                    <div class="portfolio-description">
-                                        <a href="portfolio-page-grid-gallery.html">
-                                            <h3>Towel World</h3>
-                                            <span>Graphics</span>
-                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <div class="portfolio-item no-overlay img-zoom ct-marketing">
-                                <div class="portfolio-item-wrap">
-                                    <div class="portfolio-image">
-                                        <a href="profile"><img src="images/portfolio/60.jpg" alt=""></a>
+                                        <a href="profile"><img src="/images/barang2.jpg" alt=""></a>
                                     </div>
                                     <div class="portfolio-description">
                                         <a href="profile">
-                                            <h3>Petani kokoh</h3>
+                                            <h3>Sumber wangi</h3>
                                             <span>Bojong</span>
-                                            <p>Berbagai peralatan tani</p>
+                                            <p>Berbagai parfum</p>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                             <!-- end: portfolio item -->
                             <!-- portfolio item -->
-                            <!-- <div class="portfolio-item no-overlay img-zoom ct-marketing ct-media ct-branding ct-marketing ct-webdesign">
-                                <div class="portfolio-item-wrap">
-                                    <div class="portfolio-image">
-                                        <a href="#"><img src="images/portfolio/66.jpg" alt=""></a>
-                                    </div>
-                                    <div class="portfolio-description">
-                                        <a href="portfolio-page-grid-gallery.html">
-                                            <h3>Last Iceland Sunshine</h3>
-                                            <span>Graphics</span>
-                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div> -->
+                           
                             <div class="portfolio-item no-overlay img-zoom img-zoom ct-marketing">
                                 <div class="portfolio-item-wrap">
                                     <div class="portfolio-image">
-                                        <a href="profile"><img src="images/portfolio/60.jpg" alt=""></a>
+                                        <a href="profile"><img src="/images/egg.jpg" alt=""></a>
                                     </div>
                                     <div class="portfolio-description">
                                         <a href="profile">
@@ -260,24 +237,11 @@
                             </div>
                             <!-- end: portfolio item -->
                             <!-- portfolio item -->
-                            <!-- <div class="portfolio-item no-overlay img-zoom ct-photography ct-media ct-branding ct-marketing ct-webdesign">
-                                <div class="portfolio-item-wrap">
-                                    <div class="portfolio-image">
-                                        <a href="#"><img src="images/portfolio/67.jpg" alt=""></a>
-                                    </div>
-                                    <div class="portfolio-description">
-                                        <a href="portfolio-page-grid-gallery.html">
-                                            <h3>Towel World</h3>
-                                            <span>Graphics</span>
-                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div> -->
+                           
                             <div class="portfolio-item no-overlay img-zoom img-zoom ct-branding">
                                 <div class="portfolio-item-wrap">
                                     <div class="portfolio-image">
-                                        <a href="profile"><img src="images/portfolio/60.jpg" alt=""></a>
+                                        <a href="profile"><img src="/images/drink2.jpg" alt=""></a>
                                     </div>
                                     <div class="portfolio-description">
                                         <a href="profile">
@@ -290,63 +254,32 @@
                             </div>
                             <!-- end: portfolio item -->
                             <!-- portfolio item -->
-                            <!-- <div class="portfolio-item no-overlay ct-photography ct-media ct-branding ct-Media ct-marketing ct-webdesign">
-                                <div class="portfolio-item-wrap">
-                                    <div class="portfolio-slider">
-                                        <div class="carousel dots-inside dots-dark arrows-dark" data-items="1" data-loop="true" data-autoplay="true" data-animate-in="fadeIn" data-animate-out="fadeOut" data-autoplay="1500">
-                                            <a href="#"><img src="images/portfolio/68.jpg" alt=""></a>
-                                            <a href="#"><img src="images/portfolio/71.jpg" alt=""></a>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-description">
-                                        <a href="portfolio-page-grid-gallery.html">
-                                            <h3>Towel World</h3>
-                                            <span>Graphics</span>
-                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <div class="portfolio-item no-overlay img-zoom img-zoom ct-photography">
+                            
+                             <div class="portfolio-item no-overlay img-zoom img-zoom ct-media">
                                 <div class="portfolio-item-wrap">
                                     <div class="portfolio-image">
-                                        <a href="profile"><img src="images/portfolio/60.jpg" alt=""></a>
+                                        <a href="profile"><img src="images/fashion5.jpg" alt=""></a>
                                     </div>
                                     <div class="portfolio-description">
                                         <a href="profile">
-                                            <h3>Camp equipment</h3>
-                                            <span>Babakan</span>
-                                            <p>Menyewakan alat camping dan hiking.</p>
+                                            <h3>Liza fashion</h3>
+                                            <span>babakan</span>
+                                            <p>Outfit hijab harian mu.</p>
                                         </a>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- end: portfolio item -->
-                            <!-- portfolio item -->
-                            <!-- <div class="portfolio-item no-overlay img-zoom ct-photography ct-marketing ct-media">
+                            </div> 
+                            
+                            <div class="portfolio-item no-overlay img-zoom img-zoom ct-branding">
                                 <div class="portfolio-item-wrap">
                                     <div class="portfolio-image">
-                                        <a href="#"><img src="images/portfolio/69.jpg" alt=""></a>
-                                    </div>
-                                    <div class="portfolio-description">
-                                        <a href="portfolio-page-grid-gallery.html">
-                                            <h3>Luxury Wine</h3>
-                                            <span>Graphics / Branding</span>
-                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <div class="portfolio-item no-overlay img-zoom img-zoom ct-marketing">
-                                <div class="portfolio-item-wrap">
-                                    <div class="portfolio-image">
-                                        <a href="profile"><img src="images/portfolio/60.jpg" alt=""></a>
+                                        <a href="profile"><img src="/images/drink1.jpg" alt=""></a>
                                     </div>
                                     <div class="portfolio-description">
                                         <a href="profile">
-                                            <h3>Sumber jaya</h3>
+                                            <h3>Drinksweet</h3>
                                             <span>JL. Anyar</span>
-                                            <p>Berbagai sembako.</p>
+                                            <p>Kuliner dan minuman.</p>
                                         </a>
                                     </div>
                                 </div>
@@ -370,13 +303,29 @@
                             <div class="portfolio-item no-overlay img-zoom img-zoom ct-photography">
                                 <div class="portfolio-item-wrap">
                                     <div class="portfolio-image">
-                                        <a href="profile"><img src="images/portfolio/60.jpg" alt=""></a>
+                                        <a href="profile"><img src="/images/barang3.jpg" alt=""></a>
                                     </div>
                                     <div class="portfolio-description">
                                         <a href="profile">
-                                            <h3>Kokoh bumi</h3>
+                                            <h3>Jack parfume</h3>
                                             <span>Persimpangan</span>
-                                            <p>Berbagai bahan bangunan</p>
+                                            <p>Berbagai Parfume</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end: portfolio item -->
+
+                            <div class="portfolio-item no-overlay img-zoom ct-media">
+                                <div class="portfolio-item-wrap">
+                                    <div class="portfolio-image">
+                                        <a href="profile"><img src="/images/fashion4.jpg" alt=""></a>
+                                    </div>
+                                    <div class="portfolio-description">
+                                        <a href="profile">
+                                            <h3>Lira fashion</h3>
+                                            <span>Pakaian</span>
+                                            <p>Berbagai gaya pakaian</p>
                                         </a>
                                     </div>
                                 </div>
@@ -387,6 +336,21 @@
                     </div>
                 </section>
                     <!-- Pagination -->
+                    <div class="call-to-action call-to-action-light">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-lg-10">
+                              <h3>
+                                Dapatkan <span>Mulai dari harga Rp. 100.000.-</span> anda dapat memanggil jasa industri kreatif.
+                              </h3>
+                              <p>
+                                Mari dorong UMKM mu menuju 4.0 industri 
+                              </p>
+                            </div>
+                            <div class="col-lg-2"><a class="btn btn-primaryprimary btn-" href="pagejasa">Sewa jasa</a></div>
+                          </div>
+                        </div>
+                      </div>
                     
         <!-- end: DELIVERY INFO -->
         <!-- Footer -->
@@ -396,55 +360,48 @@
                     <div class="row">
                         <div class="col-lg-5">
                             <div class="widget">
-                                <div class="widget-title">Polo HTML5 Template</div>
-                                <p class="mb-5">Built with love in Fort Worth, Texas, USA<br>
-                                    All rights reserved. Copyright © 2019. INSPIRO.</p>
-                                <a href="https://themeforest.net/item/polo-responsive-multipurpose-html5-template/13708923" class="btn btn-inverted" target="_blank">Purchase Now</a>
+                                <div class="widget-title">AIDERTECH</div>
+                                <p class="mb-5">Platform yang di rancang untuk UMKM<br>Aidertech team 2021</p>
+                                <a href="#" class="btn btn-inverted" target="_blank">Keluar akun</a>
                             </div>
                         </div>
                         <div class="col-lg-7">
                             <div class="row">
                                 <div class="col-lg-3">
                                     <div class="widget">
-                                        <div class="widget-title">Discover</div>
+                                        <div class="widget-title">Tentang</div>
                                         <ul class="list">
-                                            <li><a href="#">Features</a></li>
-                                            <li><a href="#">Layouts</a></li>
-                                            <li><a href="#">Corporate</a></li>
-                                            <li><a href="#">Updates</a></li>
-                                            <li><a href="#">Pricing</a></li>
-                                            <li><a href="#">Customers</a></li>
+                                            <li><a href="#">Aidertech</a></li>
+                                            <li><a href="#">Jasa Iklan</a></li>
+                                            <li><a href="#">Jasa Industri kreatif</li>
+                                            <li><a href="#">Fitur</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="widget">
-                                        <div class="widget-title">Features</div>
+                                        <div class="widget-title">Pengaturan</div>
                                         <ul class="list">
-                                            <li><a href="#">Layouts</a></li>
-                                            <li><a href="#">Headers</a></li>
-                                            <li><a href="#">Widgets</a></li>
-                                            <li><a href="#">Footers</a></li>
+                                            <li><a href="editprofile">Edit Profile</a></li>
+                                            <li><a href="profile">Akun</a></li>
+                                            <li><a href="profile">Langkah</a></li>
+                                            <li><a href="editprofile">Keamanan</a></li>
+                                            <li><a href="editprofile">Notifikasi</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="widget">
-                                        <div class="widget-title">Pages</div>
+                                        <div class="widget-title">Sosial Media</div>
                                         <ul class="list">
-                                            <li><a href="#">Portfolio</a></li>
-                                            <li><a href="#">Blog</a></li>
-                                            <li><a href="#">Shop</a></li>
+                                            <li><a href="#">Website</a></li>
+                                            <li><a href="#">Instagram</a></li>
+                                            <li><a href="#">Facebook</a></li>
+                                            <li><a href="#">Twitter</a></li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-lg-3">
-                                    <div class="widget">
-                                        <div class="widget-title">Support</div>
-                                        <ul class="list">
-                                            <li><a href="#">Help Desk</a></li>
-                                            <li><a href="#">Documentation</a></li>
-                                            <li><a href="#">Contact Us</a></li>
+                                            
                                         </ul>
                                     </div>
                                 </div>
@@ -455,7 +412,7 @@
             </div>
             <div class="copyright-content">
                 <div class="container">
-                    <div class="copyright-text text-center">&copy; 2019 POLO - Responsive Multi-Purpose HTML5 Template. All Rights Reserved.<a href="//www.inspiro-media.com" target="_blank" rel="noopener"> INSPIRO</a> </div>
+                    <div class="copyright-text text-center">&copy; Aidertech - 2021<a href="" target="_blank" rel="noopener"> </a> </div>
                 </div>
             </div>
         </footer>
