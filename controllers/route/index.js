@@ -71,6 +71,26 @@ route.get('/formeditproduk', (req,res) => {
     res.render('page/formeditproduk');
 });
 
+route.get('/notifikasi', (req,res) => {
+    res.render('page/notifikasi');
+});
+
+route.get('/akun', (req,res) => {
+    res.render('page/akun');
+});
+
+route.get('/keamanan', (req,res) => {
+    res.render('page/keamanan');
+});
+
+route.get('/verifikasi', (req,res) => {
+    res.render('page/verifikasi');
+});
+
+
+
+
+
 // 404
 
 route.use('/', (req,res) => {
